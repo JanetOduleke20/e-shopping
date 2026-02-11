@@ -1,0 +1,63 @@
+<app-navbar></app-navbar>
+
+<div class="col-10 container my-3 card rounded-2 px-2 py-2">
+    <div class="row mb-2">
+        <div class="col-5">
+            <label for="">First Name</label>
+            <input type="text" class="form-control b rounded-2" [(ngModel)]="first_name">
+        </div>
+        <div class="col-5">
+            <label for="">Last Name</label>
+            <input type="text" class="form-control  rounded-2" [(ngModel)]="last_name">
+        </div>
+    </div>
+
+    <!-- Phone number & email -->
+    <div class="row mb-2">
+        <div class="col-5">
+            <label for="">Email Address</label>
+            <input type="email" class="form-control b rounded-2" placeholder="" [(ngModel)]="email">
+        </div>
+        <div class="col-5">
+            <label for="">Phone number</label>
+            <input type="number" class="form-control  rounded-2" [(ngModel)]="phone_number">
+        </div>
+    </div>
+
+    <!-- Address -->
+    <div class="col-10 mb-2">
+        <div class="">
+            <label for="">Residential address</label>
+            <textarea type="text" class="form-control b rounded-2" [(ngModel)]="address"></textarea>
+        </div>
+       
+    </div>
+    <!-- Additional notes  -->
+    <div class="col-10 mb-2">
+        <div class="">
+            <label for="">Additional notes (optional)</label>
+            <textarea type="text" class="form-control b rounded-2" [(ngModel)]="additional_notes"></textarea>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-3">
+            <label for="">Zip code</label>
+            <input type="number" class="form-control b rounded-2" placeholder="" [(ngModel)]="zip_code">
+        </div>
+        <div class="col-3">
+            <label for="">City</label>
+            <input type="text" class="form-control  rounded-2" [(ngModel)]="city">
+        </div>
+         <div class="col-3">
+            <label for="">Country</label>
+            <input type="text" class="form-control  rounded-2"  [(ngModel)]="country">
+        </div>
+    </div>
+
+    <div class="my-4 ms-auto w-100">
+        <button class="btn btn-dark w-50" (click)="register()">Register</button>
+    </div>
+
+    
+</div>
